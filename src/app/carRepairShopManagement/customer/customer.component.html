@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row justify-content-end">
+    <button type="button" class="btn btn-outline-success" (click)="openAddCustomerModal(newCustomer)">Dodaj
+      klienta</button>
+  </div>
+</div>
+<div>
+  <router-outlet></router-outlet>
+  <ng-template #newCustomer let-modal>
+    <app-add-customer></app-add-customer>
+  </ng-template>

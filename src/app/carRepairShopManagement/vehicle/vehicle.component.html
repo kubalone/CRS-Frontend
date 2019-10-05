@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row justify-content-end">
+    <button type="button" class="btn btn-outline-success" (click)="openAddVehicleModal(newVehicle)">Dodaj
+      pojazd</button>
+  </div>
+
+
+
+  <ng-template #newVehicle let-modal>
+    <app-add-vehicle [addVehicleInAddOrderView]="false"></app-add-vehicle>
+  </ng-template>
+  <router-outlet></router-outlet>
+
+</div>
